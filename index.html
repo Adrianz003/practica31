@@ -39,9 +39,9 @@
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-               if (data.return_value === 1) {
+               if (data.return_value == 1) {
                     alert(`LED ${estado === 'on' ? 'encendido' : 'apagado'} correctamente.`);
-                } if (data.return_value === 0) {
+                } if (data.return_value == 0) {
                     alert(`LED ${estado === 'off' ? 'apagado' : 'encendido'} correctamente.`);
                 } else {
                     alert('HJOLA');
