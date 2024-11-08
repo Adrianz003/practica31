@@ -40,9 +40,9 @@
             .then(data => {
                 console.log(data);
                if (data.return_value === 1) {
-                    alert(`LED ${estado === 'on' ? 'encendido' : 'apagado'} correctamente.`);
+                    alert(`LED ${estado === 'off' ? 'encendido' : 'apagado'} correctamente.`);
                 }else if (data.return_value === 0) {
-                    alert(`LED ${estado === 'off' ? 'apagado' : 'encendido'} correctamente.`);
+                    alert(`LED ${estado === 'on' ? 'apagado' : 'encendido'} correctamente.`);
                 } else {
                     alert('HJOLA');
                 }
