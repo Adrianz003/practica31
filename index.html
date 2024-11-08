@@ -39,6 +39,16 @@
             .then(response => response.json())
             .then(data => {
                 console.log(data);
+                if (data.return_value === 1) {
+                    alert("Se encendió correctamente");
+                } else if(data.erturn_value === 0)
+                {
+                    alert('Se apagó correctamente');
+                }
+                else
+                {
+                    alert("Error");
+                }
             })
             .catch(error => console.error('Error:', error));
         }
